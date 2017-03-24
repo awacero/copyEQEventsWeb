@@ -64,29 +64,38 @@ def copy_folder(evID, srvRmt):
 
 
 
-def principal(evID,server_name):
+def copia_evento(evID,server_name):
 
     servers = read_config_file(server_file)
     if servers == -1:
         logging.debug('Error while reading servers file: %s' % (server_file))
         return -1
     else:
-        logging.debug("Read json file ok")
+        logging.debug("Read json file ok")   
     
-    '''
-    client = connect2server(servers[configPlugin.server_name])
-    if client == -1:
-        logging.debug("Error connect2server(). Exit")
-        return -1
-    else:
-        logging.debug("connect2server() ok")
-    '''    
-    
-    if copy_files(servers[server_name]) == 0 and copy_folder(evID,servers[server_name]) ==0:
-        return "Files copied ok, copiaServidorWeb_plugin exit"
+    if copy_folder(evID,servers[server_name]) == 0:
+        return "copia_evento() ok, copiaServidorWeb_plugin exit"
     else:
         return "Something went wrong, check copiaServidorWeb.log, copiaServidorWeb_plugin exit"
 
+def copia_carpetas(server_name):
+    
+    servers = read_config_file(server_file)
+    if servers == -1:
+        logging.debug('Error while reading servers file: %s' % (server_file))
+        return -1
+    else:
+        logging.debug("Read json file ok")   
+
+    if copy_files(servers[server_name]) == 0:
+        return "copia_carpetas() ok, copiaServidorWeb_plugin exit"
+    else:
+        return "Something went wrong, check copiaServidorWeb.log, copiaServidorWeb_plugin exit"
+    
+
+#    if copy_files(servers[server_name]) == 0:
+
+#and copy_folder(evID,servers[server_name]) ==0:
 
 #print principal('igepn2017aksy','srvTest1')
 
