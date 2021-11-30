@@ -22,3 +22,9 @@ service.copiaEvento.spooler.cmd = ${HOME}/plugins_python/copiaServidorWeb/send_c
 service.copiaEvento.spooler.timeout = 120
 
 ```
+
+Restart the GDS daemon
+
+```
+$ seiscomp restart gds 
+```
