@@ -1,0 +1,19 @@
+{
+        "server_name":{
+                "username":"USUARIO",
+                "password":"/PATH_TO_PASSWORD_FILE/password_file",
+                "ip":"1.1.1.1",
+                "port":22,
+                "destino":"/EQEVENTS_DESTINATION_PATH/",
+                "timeout":"10"
+        },
+        "server_name_2":{
+                "username":"USUARIO",
+                "password":"/PATH_TO_PASSWORD_FILE/password_file",
+                "ip":"1.1.1.1",
+                "port":22,
+                "destino":"/EQEVENTS_DESTINATION_PATH/",
+                "timeout":"10"
+        }
+
+}

@@ -93,13 +93,11 @@ def copia_carpetas(server_name):
         return "Something went wrong, check copiaServidorWeb.log, copiaServidorWeb_plugin exit"
     
 
-#    if copy_files(servers[server_name]) == 0:
 
-#and copy_folder(evID,servers[server_name]) ==0:
 
-#print principal('igepn2017aksy','srvTest1')
+#print copia_evento('igepn2017aksy','srvTest1')
 
-#print principal('igepn2017aksy','srvTest2')
+#print copia_carpetas('igepn2017aksy','srvTest2')
 
 
 
