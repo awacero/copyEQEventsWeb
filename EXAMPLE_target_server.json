@@ -4,7 +4,7 @@
                 "password":"/PATH_TO_PASSWORD_FILE/password_file",
                 "ip":"1.1.1.1",
                 "port":22,
-                "destino":"/EQEVENTS_DESTINATION_PATH/",
+                "target_path":"/EQEVENTS_DESTINATION_PATH/",
                 "timeout":"10"
         },
         "server_name_2":{
@@ -12,7 +12,7 @@
                 "password":"/PATH_TO_PASSWORD_FILE/password_file",
                 "ip":"1.1.1.1",
                 "port":22,
-                "destino":"/EQEVENTS_DESTINATION_PATH/",
+                "target_path":"/EQEVENTS_DESTINATION_PATH/",
                 "timeout":"10"
         }
 
